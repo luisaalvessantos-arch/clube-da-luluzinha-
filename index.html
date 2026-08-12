@@ -3,54 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portal de Estudos</title>
+    <title>Clube da Luluzinha - Portal de Estudos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Centro de Autonomia e Dúvidas</h1>
-        <p>Espaço centralizado para organizar minhas tarefas e perguntas.</p>
+        <h1>🎀 Clube da Luluzinha 🎀</h1>
+        <p>Meu espaço centralizado para organizar tarefas, prazos e dúvidas escolares.</p>
     </header>
 
     <main class="container">
-        <!-- Seção de Status do que já tentei fazer -->
-        <section class="card">
-            <h2>⚙️ O que já verifiquei antes de perguntar:</h2>
+        <!-- Regra de Ouro -->
+        <section class="card banner-regra">
+            <h2>⏱️ Minha Regra de Ouro antes de perguntar:</h2>
             <ul>
-                <li><input type="checkbox" checked disabled> Reli o material da aula e os slides.</li>
-                <li><input type="checkbox" checked disabled> Pesquisei no Google e na documentação.</li>
-                <li><input type="checkbox" id="check-fix"> Revisei o código/texto em busca de erros simples.</li>
+                <li><input type="checkbox" checked disabled> Reli os slides e anotações da aula.</li>
+                <li><input type="checkbox" checked disabled> Pesquisei soluções no Google ou livros.</li>
+                <li><input type="checkbox" id="check-fix"> Tentei resolver sozinha por pelo menos 15 minutos.</li>
             </ul>
         </section>
 
-        <!-- Painel de Dúvidas Atuais -->
+        <!-- Mural de Recados -->
+        <section class="card">
+            <h2>📢 Mural de Recados dos Professores</h2>
+            <div class="mural-item">
+                <p><strong>Prof. Ana (História):</strong> "Luluzinha, lembre de focar no capítulo 4 para a entrega de sexta!"</p>
+            </div>
+        </section>
+
+        <!-- Contador de Prazos -->
+        <section class="card">
+            <h2>⏳ Próximas Missões do Clube</h2>
+            <ul class="lista-prazos">
+                <li><span class="alerta">🚨 18/05:</span> Entrega do Relatório de Biologia</li>
+                <li><span class="alerta">📅 22/05:</span> Prova de Matemática (Revisar matrizes)</li>
+            </ul>
+        </section>
+
+        <!-- Painel de Dúvidas -->
         <section class="card">
             <h2>❓ Minhas Dúvidas Atuais</h2>
-            <div class="duvida-item">
-                <span class="badge materia-1">Matéria A</span>
+            <div class="duvida-item materia-1">
+                <span class="badge badge-m1">História</span>
                 <h3>Dúvida sobre o conceito X</h3>
-                <p>Professor, tentei aplicar a fórmula Y no exercício 3, mas o resultado diverge do gabarito. Onde posso estar errando?</p>
+                <p>Professora, tentei cruzar os dados do texto A com o texto B, mas fiquei confusa sobre a linha do tempo. Poderia me orientar na próxima aula?</p>
             </div>
-            <div class="duvida-item">
-                <span class="badge materia-2">Matéria B</span>
-                <h3>Erro na linha de código Z</h3>
-                <p>O console apresenta erro de sintaxe. Já verifiquei as chaves e ponto e vírgula.</p>
+            <div class="duvida-item materia-2">
+                <span class="badge badge-m2">Matemática</span>
+                <h3>Erro no cálculo da matriz</h3>
+                <p>Professor, revisei os sinais três vezes, mas o resultado final não bate com o gabarito do livro. Onde posso estar errando?</p>
             </div>
         </section>
 
         <!-- Links Importantes -->
         <section class="card">
             <h2>📂 Meus Trabalhos e Links</h2>
-            <p>Acesse minhas entregas organizadas:</p>
-            <div class="links-utiles">
+            <p>Acesse minhas entregas organizadas para avaliação:</p>
+            <div class="links-uteis">
                 <a href="#" target="_blank" class="btn">📁 Google Drive (Trabalhos)</a>
-                <a href="#" target="_blank" class="btn">📝 Repositório de Exercícios</a>
+                <a href="#" target="_blank" class="btn">📝 Caderno Virtual de Exercícios</a>
             </div>
+        </section>
+
+        <!-- Espaço do Professor / Feedback -->
+        <section class="card">
+            <h2>💬 Espaço do Professor</h2>
+            <p>Professores, deixem aqui um feedback rápido sobre como posso melhorar minha autonomia:</p>
+            <form class="form-feedback" id="form-professor">
+                <input type="text" id="nome-prof" placeholder="Seu Nome / Matéria" required>
+                <textarea id="texto-feedback" placeholder="O que eu posso melhorar ou ajustar?" rows="3" required></textarea>
+                <button type="submit" class="btn btn-submit">Enviar Recado</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>Criado para otimizar a comunicação com meus professores.</p>
+        <p>Criado com carinho para otimizar a comunicação com meus professores. 💕</p>
     </footer>
 
     <script src="script.js"></script>
