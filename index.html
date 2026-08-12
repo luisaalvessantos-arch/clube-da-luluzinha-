@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portal de Estudos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Centro de Autonomia e Dúvidas</h1>
+        <p>Espaço centralizado para organizar minhas tarefas e perguntas.</p>
+    </header>
+
+    <main class="container">
+        <!-- Seção de Status do que já tentei fazer -->
+        <section class="card">
+            <h2>⚙️ O que já verifiquei antes de perguntar:</h2>
+            <ul>
+                <li><input type="checkbox" checked disabled> Reli o material da aula e os slides.</li>
+                <li><input type="checkbox" checked disabled> Pesquisei no Google e na documentação.</li>
+                <li><input type="checkbox" id="check-fix"> Revisei o código/texto em busca de erros simples.</li>
+            </ul>
+        </section>
+
+        <!-- Painel de Dúvidas Atuais -->
+        <section class="card">
+            <h2>❓ Minhas Dúvidas Atuais</h2>
+            <div class="duvida-item">
+                <span class="badge materia-1">Matéria A</span>
+                <h3>Dúvida sobre o conceito X</h3>
+                <p>Professor, tentei aplicar a fórmula Y no exercício 3, mas o resultado diverge do gabarito. Onde posso estar errando?</p>
+            </div>
+            <div class="duvida-item">
+                <span class="badge materia-2">Matéria B</span>
+                <h3>Erro na linha de código Z</h3>
+                <p>O console apresenta erro de sintaxe. Já verifiquei as chaves e ponto e vírgula.</p>
+            </div>
+        </section>
+
+        <!-- Links Importantes -->
+        <section class="card">
+            <h2>📂 Meus Trabalhos e Links</h2>
+            <p>Acesse minhas entregas organizadas:</p>
+            <div class="links-utiles">
+                <a href="#" target="_blank" class="btn">📁 Google Drive (Trabalhos)</a>
+                <a href="#" target="_blank" class="btn">📝 Repositório de Exercícios</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Criado para otimizar a comunicação com meus professores.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
